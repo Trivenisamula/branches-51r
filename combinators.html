@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinators</title>
+    <style>
+        .middle>.weird>p{
+            color: aqua;
+        }
+        .middle>.weird>p+span{
+            background-color: rgb(241, 249, 9);
+        }
+        .weird+p{
+            color: blueviolet;
+        }
+        .weird~span{
+            background-color: blanchedalmond;
+        }
+        .middle>div>p{
+            color: chartreuse;
+        }
+        .middle+p{
+            background-color: brown;
+        }
+        .middle~span{
+            color: cyan;
+        }
+        .outer+article>p{
+            background-color: blue;
+        }
+        .outer~p{
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <section class="outer">
+    <div class="middle">
+      <article class="weird">
+        <p>Paragraph 1</p>
+        <span>Span in article</span>
+      </article>
+      <p>Paragraph 2</p>
+      <span>Span in middle</span>
+      <div>
+        <p>Nested Paragraph 3</p>
+      </div>
+    </div>
+    <p>Paragraph 4</p>
+    <span>Span in outer</span>
+  </section>
+
+  <article>
+    <p>Paragraph 5</p>
+  </article>
+
+  <p>Paragraph 6</p>
+</body>
+</html>
